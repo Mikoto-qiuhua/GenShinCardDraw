@@ -1,0 +1,32 @@
+#抽取的记录上限
+RecordMax: 100
+#玩家进服时加载延迟 20=1秒
+LoadDataDelay: 40
+#记录抽取物品的格式
+HistoryRecordFormat: "<card> -> <time>"
+#历史记录用的那个gui名称
+HistoryRecordGui: "祈愿记录"
+#显示历史记录的那个文本组件
+HistoryRecordText: "历史记录容器-历史记录文本"
+#打开历史记录的那个按钮
+HistoryRecordButton: "历史记录按钮"
+#单抽的按钮
+Button1: "祈愿单抽按钮"
+#10抽的按钮
+Button10: "祈愿10抽按钮"
+#使用gif当视频时需要重置gif的路径列表
+GifReset:
+  - "video/单抽出蓝.gif"
+  - "video/单抽出紫.gif"
+  - "video/单抽出金.gif"
+#结算界面的箱子标题 配合guipro的箱子界面覆盖可以修改外观
+CheckoutGui1: "单抽结算页面"
+CheckoutGui10: "10连结算页面"
+Database:
+  type: sqlite   #sqlite或者mysql   mysql才需要配置下面的部分
+  dataBaseName: GenShinCardDraw  #数据库名称
+  username: root  #账户名称
+  password: root  #密码
+  port: 3306  #端口
+  ip: 127.0.0.1  #ip
+  autoSave: 15 #自动保存单位分钟
